@@ -1,0 +1,7 @@
+str1 = "12" #str
+str2 = "12" #str
+print(int(str1))
+print(int(str2))
+print(float(str1))
+print(float(str2))
+
