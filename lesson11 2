@@ -1,0 +1,36 @@
+print('Enter your year of birth:')
+year=input()
+while type(year)!=int:
+    try:
+        year=int(year)
+        if year<0:
+            print('cant not')
+            year=input()
+    except ValueError:
+        print('cant not')
+        year=input()
+
+print('Enter your month of birth:')
+month=input()
+while type(month)!=int:
+    try:
+        month=int(month)
+        if month<=0 or month>12:
+            print('cant not')
+            month=input()
+    except ValueError:
+        print('cant not')
+        month=input()
+
+print('Enter your month of birth:')
+day=input()
+while type(day)!=int:
+    try:
+        day=int(day)
+        if day<=0 or day>31:
+            print('cant not')
+            day=input()
+    except ValueError:
+        print('cant not')
+        day=input()
+
