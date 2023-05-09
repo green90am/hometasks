@@ -46,5 +46,62 @@ while type(day)!=int:
     except ValueError:
         print('cant not')
         day=input()
+print('Enter today\'s year: ')
+dyear=input()
+while type(dyear)!=int:
+    try:
+        dyear=int(dyear)
+    except ValueError:
+        print('cant not')
+        dyear=input()
+print('Enter today\'s year: ')
+dyear=input()
+while type(dyear)!=int:
+    try:
+        dyear=int(dyear)
+        if dyear<=0 or dyear>2023:
+         print('can\'t not')
+         dyear=input()
+    except ValueError:
+        print('cant not')
+        dyear=input()
+print('Enter today\'s month: ')
+dmonth=input()
+while type(dmonth)!=int:
+    try:
+        dmonth=int(dmonth)
+        if dmonth<=0 or dmonth>12:
+         print('can\'t not')
+         dmonth=input()
+    except ValueError:
+        print('cant not')
+        dmonth=input()
+print('Enter today\'s day: ')
+dday=input()
+while type(dday)!=int:
+    try:
+        dday=int(dday)
+        if dday<=0 or dday>31:
+            print('can\'t not')
+            dday=input()
+        elif dmonth==2 and dday>29:
+             print('cant not')
+             dday=input()
+        elif dmonth==4 and dday>30:
+             print('cant not')
+             dday=input()
+        elif dmonth==6 and dday>30:
+             print('cant not')
+             dday=input()
+        elif dmonth==9 and dday>30:
+             print('cant not')
+             dday=input()
+        elif dmonth==11 and dday>30:
+             print('cant not')
+             dday=input()
+    except ValueError:
+        print('cant not')
+        dday=input()
+
 
 
