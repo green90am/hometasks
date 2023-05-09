@@ -9,7 +9,6 @@ while type(year)!=int:
     except ValueError:
         print('cant not')
         year=input()
-
 print('Enter your month of birth:')
 month=input()
 while type(month)!=int:
@@ -21,7 +20,6 @@ while type(month)!=int:
     except ValueError:
         print('cant not')
         month=input()
-
 print('Enter your day of birth:')
 day=input()
 while type(day)!=int:
@@ -48,4 +46,5 @@ while type(day)!=int:
     except ValueError:
         print('cant not')
         day=input()
+
 
