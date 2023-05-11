@@ -1,0 +1,102 @@
+print('Enter your year of birth:')
+year=input()
+while type(year)!=int:
+    try:
+        year=int(year)
+        if year<0:
+            print('cant not')
+            year=input()
+    except ValueError:
+        print('cant not')
+        year=input()
+print('Enter your month of birth:')
+month=input()
+while type(month)!=int:
+    try:
+        month=int(month)
+        if month<=0 or month>12:
+            print('cant not')
+            month=input()
+    except ValueError:
+        print('cant not')
+        month=input()
+print('Enter your day of birth:')
+day=input()
+while type(day)!=int:
+    try:
+        day=int(day)
+        if day<=0 or day>31:
+            print('cant not')
+            day=input()
+        elif month==2 and day>29:
+             print('cant not')
+             day=input()
+        elif month==4 and day>30:
+             print('cant not')
+             day=input()
+        elif month==6 and day>30:
+             print('cant not')
+             day=input()
+        elif month==9 and day>30:
+             print('cant not')
+             day=input()
+        elif month==11 and day>30:
+             print('cant not')
+             day=input()
+    except ValueError:
+        print('cant not')
+        day=input()
+print('Enter today\'s year: ')
+dyear=input()
+while type(dyear)!=int:
+    try:
+        dyear=int(dyear)
+        if dyear<=0 or dyear>2023:
+         print('can\'t not')
+         dyear=input()
+    except ValueError:
+        print('cant not')
+        dyear=input()
+print('Enter today\'s month: ')
+dmonth=input()
+while type(dmonth)!=int:
+    try:
+        dmonth=int(dmonth)
+        if dmonth<=0 or dmonth>12:
+         print('can\'t not')
+         dmonth=input()
+    except ValueError:
+        print('cant not')
+        dmonth=input()
+print('Enter today\'s day: ')
+dday=input()
+while type(dday)!=int:
+    try:
+        dday=int(dday)
+        if dday<=0 or dday>31:
+            print('can\'t not')
+            dday=input()
+        elif dmonth==2 and dday>29:
+             print('cant not')
+             dday=input()
+        elif dmonth==4 and dday>30:
+             print('cant not')
+             dday=input()
+        elif dmonth==6 and dday>30:
+             print('cant not')
+             dday=input()
+        elif dmonth==9 and dday>30:
+             print('cant not')
+             dday=input()
+        elif dmonth==11 and dday>30:
+             print('cant not')
+             dday=input()
+    except ValueError:
+        print('cant not')
+        dday=input()
+a=dyear-year
+if dmonth>=month and dday>day:
+    a=dyear-year-1
+print('Your age:',a)
+
+
