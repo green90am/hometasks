@@ -103,8 +103,3 @@ while type(dday)!=int:
         print('cant not')
         dday=input()
 
-gfmn
-
-fgfgn
-
-thrh
