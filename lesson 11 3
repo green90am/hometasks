@@ -1,0 +1,50 @@
+print('Enter the year of birth of 1 person:\n')
+y1=input()
+while type(y1)!=int:
+    try:
+         y1=int(y1)
+         if y1<1900 or y1>2023:
+            print('it\'s can not. Enter the year of birth of 1 person:\n')
+            y1=input()
+    except (TypeError,ValueError):
+        print('it\'s can not. Enter the year of birth of 1 person:\n')
+        y1=input()
+print('Enter the month of birth of 1 person:\n')
+m1=input()
+while type(m1)!=int:
+    try:
+        m1=int(m1)
+        if m1>13 or m1<=0:
+            print('It\'s can not. 12 months a year. Enter the month of birth of 1 person:\n')
+            m1=input()
+    except (TypeError,ValueError):
+        print('It\'s can not. Enter the month of birth of 1 person:\n')
+        m1==input()
+print('Enter the day of birth of 1 person:\n')
+d1=input()
+while type(d1)!=int:
+    try:
+        d1=int(d1)
+        if d1<1 or d1>31:
+            print('It\'s can not. day<31. Enter the day of birth of 1 person:\n')
+            d1=input()
+        elif m1==2 and d1>29:
+             print('It\'s can not. Month has 29 day. Enter the day of birth of 1 person:\n')
+             d1=input()
+        elif m1==4 and d1>30:
+             print('It\'s can not. Month has 30 day. Enter the day of birth of 1 person:\n')
+             d1=input()
+        elif m1==6 and d1>30:
+             print('It\'s can not. Month has 30 day. Enter the day of birth of 1 person:\n')
+             d1=input()
+        elif m1==9 and d1>30:
+             print('It\'s can not. Month has 30 day. Enter the day of birth of 1 person:\n')
+             d1=input()
+        elif m1==11 and d1>30:
+             print('It\'s can not. Month has 30 day. Enter the day of birth of 1 person:\n')
+             d1=input()
+    except (TypeError,ValueError):
+        print('It\'s can not. Enter the day of birth of 1 person:\n')
+        d1==input()
+
+
