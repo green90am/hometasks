@@ -1,0 +1,7 @@
+import math
+x=float(input())
+y=math.fmod(x,5)
+if y==0:
+    print(x,'is divisible without a trace')
+else:
+    print(x,'is\'t divisible without a trace')
