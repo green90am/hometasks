@@ -1,0 +1,20 @@
+print('Enter five-degree natural number:')
+x=input()
+while type(x)!=int:
+    try:
+        x=int(x)
+        if x<=9999 or x>=100000:
+            print('Enter five-degree natural number:')
+            x=input()
+    except (TypeError,ValueError):
+        print('Enter five-degree natural number:')
+        x=input()
+x=str(x)
+a1=x[0:1:1]
+a2=x[1:2:1]
+a3=x[2:3:1]
+a4=x[3:4:1]
+a5=x[4:5:1]
+a=[a1,a2,a3,a4,a5]
+max_number=max(a)
+print(max_number)
