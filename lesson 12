@@ -1,3 +1,4 @@
+print('Task1')
 print('Enter five-degree natural number:')
 x=input()
 while type(x)!=int:
@@ -18,3 +19,6 @@ a5=x[4:5:1]
 a=[a1,a2,a3,a4,a5]
 max_number=max(a)
 print(max_number)
+print('\n','Task2')
+print(x[-1:-6:-1])
+
