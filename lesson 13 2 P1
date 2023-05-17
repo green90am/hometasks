@@ -1,0 +1,15 @@
+print('Practik13.Task1.Perfect numbers.')
+a=input('Enter number:')
+while a.isdigit()==False:
+    a=input('Enter number:')
+a=int(a)
+i=1
+per=2**(i-1)*(2**i-1)
+print('Perfect number:',end=' ')
+while per<=a :
+    per=2**(i-1)*(2**i-1)
+    if per<=a:
+        print(per, end=' ')
+    i+=1
+
+
