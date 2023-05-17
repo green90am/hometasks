@@ -1,0 +1,21 @@
+print('Lesson13.Task1.')
+f1 = 1
+f2 = 1
+n = input("number of items Febonacci to output: ")
+while n.isdigit()==False:
+    n = input("number of items Febonacci to output: ")
+n = int(n)
+i = 0
+print(f1)
+print(f2)
+while i < n-2:
+    f3 = f1 + f2
+    f1=f2
+    f2=f3
+    print(f3)
+    i+=1
+
+
+
+
+
