@@ -1,0 +1,23 @@
+print('Amount of element n=:')
+n=input()
+while n.isdigit()==False:
+    print('Can not. Amount of element n=:')
+    n=input()
+n=int(n)
+import random
+randomnumbers=random.sample(range(0,n), n)#диапозон случайных чисел от 0 до 10
+print(randomnumbers)
+a=min(randomnumbers)
+print('MIN randomnumbers=',a)
+b=max(randomnumbers)
+print('MAX randomnumbers=',b)
+indexa=randomnumbers.index(a)
+print('index MIN randomnumbers=',indexa)
+indexb=randomnumbers.index(b)
+print('index MAX randomnumbers=',indexb)
+if indexa<indexb:
+    x=randomnumbers[(indexa+1):indexb]#извлекаем срез из списка сгенерированных чисел
+else:
+    x=randomnumbers[(indexb+1):indexa]#извлекаем срез из списка сгенерированных чисел
+import math
+print('SUMbeetwin MAXMIN=',math.fsum(x))
