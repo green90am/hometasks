@@ -1,3 +1,4 @@
+print('Lesson14 1.Task1')
 import random
 print('Enter amouts of elements random lst n=')
 n=input()# amouts of elements list
@@ -13,3 +14,17 @@ for i in l2:
     if i>=0:
         summ+=int(i)
 print('Summ + numbers=',summ)
+print('Task1 is over')
+
+print('Task2')
+summ2=0
+for i in l2:
+    summ2+=int(i)
+average=summ2/n
+print('Average=',average)
+for i in l2:
+    if i<average:
+        print(i, end=' ')
+print('Task2 is over')
+
+
