@@ -1,0 +1,15 @@
+import random
+print('Enter amouts of elements random lst n=')
+n=input()# amouts of elements list
+while n.isdigit()==False:
+    print('It is not')
+    n=input()
+n=int(n)
+l1=random.sample(range(-n,n),n)
+l2=list(l1)#random list created
+print('Random list l2=',l2)
+summ=0
+for i in l2:
+    if i>=0:
+        summ+=int(i)
+print('Summ + numbers=',summ)
