@@ -1,0 +1,31 @@
+print('Lesson15. Task1')
+n=input('Enter amount of elements random list n=')
+while n.isdigit()==False:
+    print('It is not.Enter n=')
+    n=input()
+n=int(n)
+import random
+m1=random.sample(range(-100,100),n)
+print('Random list=',m1)
+ms1=m1
+ms1.sort()
+print('Sort random list=',ms1)
+print('Random list=',m1) # ПОЧЕМУ ПОРЯДОК ЧИСЕЛ СТАЛ ТАКИМ ЖЕ КАК В ms1???
+print('MIN1=',ms1[0],'MIN2=',ms1[1])
+print('Task1 is over')
+
+print('Task2')
+m1len=len(m1)
+print('m1len=',m1len)
+a=int(input('Enter a='))
+b=int(input('Enter b='))
+m2=[a,b]
+ms2=m2
+ms2.sort()
+for i in m1[0:n+1]:
+    if ms2[0]<i<ms2[1]:
+        #m1.insert((m1.index(i)),0)
+        m1.remove(i)
+        m1.append(0)
+print(m1)
+
