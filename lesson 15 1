@@ -15,7 +15,6 @@ print('MIN1=',ms1[0],'MIN2=',ms1[1])
 print('Task1 is over')
 
 print('Task2')
-m1len=len(m1)
 print('m1len=',m1len)
 a=int(input('Enter a='))
 b=int(input('Enter b='))
